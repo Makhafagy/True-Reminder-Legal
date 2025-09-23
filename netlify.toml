@@ -1,0 +1,10 @@
+# netlify.toml
+[build]
+  publish = "."
+  command = ""
+
+# Optional: redirect root to privacy if you add more pages later
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
