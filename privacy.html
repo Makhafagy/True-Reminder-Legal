@@ -4,196 +4,220 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
+  <meta name="color-scheme" content="light dark">
   <title>True Reminder — Privacy Policy</title>
   <style>
-    :root {
-      --bg: #0b0c10;
-      --fg: #111827;
-      --card: #ffffff;
-      --text: #111827;
-      --muted: #6b7280;
-      --accent: #2563eb;
-      --border: #e5e7eb;
+    :root{
+      color-scheme: light dark;
+      --bg:#f3f4f6;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --accent:#2563eb;
+      --border:#e5e7eb;
+      --shadow:rgba(0,0,0,.06);
+      --callout:rgba(37,99,235,.08);
     }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0b0c10;
-        --card: #161a22;
-        --text: #e5e7eb;
-        --muted: #94a3b8;
-        --border: #263041;
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b0c10;
+        --card:#161a22;
+        --text:#e5e7eb;
+        --muted:#94a3b8;
+        --border:#263041;
+        --shadow:rgba(0,0,0,.35);
+        --callout:rgba(37,99,235,.14);
       }
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      color: var(--text);
-      background: var(--bg);
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:var(--bg);
     }
-    .wrap {
-      max-width: 860px;
-      margin: 48px auto;
-      padding: 0 20px;
+    .wrap{max-width:900px;margin:48px auto;padding:0 18px}
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:26px;
+      box-shadow:0 1px 14px var(--shadow);
     }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 28px;
-      box-shadow: 0 1px 12px rgba(0,0,0,.06);
+    .back{
+      position:fixed;top:14px;left:14px;
+      padding:8px 12px;
+      text-decoration:none;
+      color:var(--accent);
+      font-weight:700;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:10px;
+      box-shadow:0 1px 10px var(--shadow);
+      z-index:1000;
     }
-    /* Styles specific to policy pages (eula.html, privacy.html) */
-    h1, h2, h3 { line-height: 1.25; margin: 0.6em 0 0.3em; }
-    h2 { font-size: 1.35rem; margin-top: 1.4rem; }
-    p, li { color: var(--text); }
-    .muted { color: var(--muted); }
-    .badge { display:inline-block; padding: 4px 10px; border:1px solid var(--border); border-radius:999px; font-size:.85rem; color:var(--muted); }
-    a { color: var(--accent); }
-    hr { border: 0; border-top: 1px solid var(--border); margin: 24px 0; }
-    .callout { background: rgba(37,99,235,.06); border-left: 3px solid var(--accent); padding: 12px 14px; border-radius: 8px; }
-    
-    /* Restores bullets and indentation for all content lists */
-    ul { padding-left: 20px; } 
-
-    /* Styles specific to index.html links */
-    .card h1 { font-size: 2rem; }
-    .nav-list { list-style: none; padding: 0; } /* Targets the button list on index.html */
-    
-    /* Style for the link buttons (scoped to the .nav-list only) */
-    .nav-list a { 
-        display: block; 
-        padding: 12px 18px; 
-        margin-bottom: 8px; 
-        border: 1px solid var(--border); 
-        border-radius: 8px; 
-        text-decoration: none; 
-        color: var(--text); 
-        font-weight: 600; 
-        transition: background-color 0.2s;
+    h1{margin:0 0 6px;font-size:2rem;letter-spacing:-0.02em;line-height:1.15}
+    .meta{margin:0 0 14px;color:var(--muted)}
+    h2{margin:22px 0 8px;font-size:1.28rem;line-height:1.2}
+    p{margin:10px 0}
+    ul{margin:10px 0 10px 20px;padding:0}
+    li{margin:6px 0}
+    a{color:var(--accent)}
+    hr{border:0;border-top:1px solid var(--border);margin:22px 0}
+    .callout{
+      background:var(--callout);
+      border:1px solid rgba(37,99,235,.25);
+      border-left:4px solid var(--accent);
+      padding:12px 14px;
+      border-radius:12px;
+      margin:14px 0;
     }
-    .nav-list a:hover {
-        background-color: rgba(37,99,235,.06);
-        border-color: var(--accent);
-        color: var(--accent);
+    .badge{
+      display:inline-block;
+      padding:4px 10px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      color:var(--muted);
+      font-size:.85rem;
     }
-    /* End of link button styles */
-
-    .footer { 
-        margin-top: 24px; 
-        font-size: .9rem; 
-        display: flex; 
-        flex-direction: column; 
-        align-items: flex-start;
-        gap: 12px;
+    .footer{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      color:var(--muted);
+      font-size:.92rem;
     }
-    .back-button {
-        position: fixed;
-        top: 16px;
-        left: 16px;
-        padding: 8px 14px;
-        text-decoration: none;
-        color: var(--accent);
-        font-weight: 600;
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        box-shadow: 0 1px 6px rgba(0,0,0,.08);
-        z-index: 1000;
-        transition: background-color 0.2s;
-    }
-    .back-button:hover {
-      background-color: rgba(37,99,235,.06);
-    }
+    .muted{color:var(--muted)}
   </style>
 </head>
 <body>
+  <a class="back" href="index.html">← Back</a>
+
   <div class="wrap">
     <div class="card">
       <h1>True Reminder — Privacy Policy</h1>
-      <p class="muted">Effective date: September 28, 2025</p>
-      <p>True Reminder (“the App”) is developed and operated by <strong>Mahmoud Khafagy</strong> (“we”, “us”). This policy explains how the App handles information. It’s designed to be short, clear, and concise.</p>
+      <p class="meta">Effective date: September 28, 2025</p>
+
+      <p>
+        True Reminder (the “App”) is developed and operated by <strong>Mahmoud Khafagy</strong> (an individual) (“we”, “us”).
+        This policy explains what information the App processes and how it’s used.
+      </p>
 
       <div class="callout">
-        Summary: We use your iCloud account to store and sync your reminders and shared spaces. We don’t sell data, we don’t use third-party ads, and payment is processed by Apple.
+        <strong>Summary:</strong>
+        The App stores reminders and shared “Spaces” in <strong>your iCloud/CloudKit</strong>.
+        There is <strong>no public feed</strong> or public database.
+        If you use the optional <strong>Copilot</strong> feature, your request is sent to our backend (AWS) and to an AI provider to generate suggested actions.
+        We do not sell your data and we don’t run ads.
       </div>
 
-      <h2 id="what-we-collect">1) What we collect</h2>
+      <h2 id="what-we-process">1) Information we process</h2>
       <ul>
-        <li>iCloud / CloudKit data. Reminder titles, times, schedules, shared “Spaces,” and related metadata are saved in <em>your</em> iCloud account to enable syncing and collaboration.</li>
-        <li>App settings. Local preferences (e.g., sound selection, repeat options) are stored on your device.</li>
-        <li>Purchases. Subscription and one-time purchase status is handled by Apple’s App Store. We receive a basic status flag to unlock Pro features; we never receive your card details.</li>
-        <li>Diagnostics (optional). Apple may provide anonymized crash/performance reports so we can fix bugs and improve reliability.</li>
+        <li>
+          <strong>iCloud / CloudKit reminder data (core app).</strong>
+          Reminder titles, schedules, status, and shared “Space” metadata are stored in your iCloud account using Apple CloudKit.
+          Shared Spaces are only visible to the members you invite or who join via your share.
+        </li>
+        <li>
+          <strong>App settings (on-device).</strong>
+          Preferences such as UI settings, sounds, and notification configuration are stored locally on your device (and may be included in your device backups depending on your iOS settings).
+        </li>
+        <li>
+          <strong>Purchases.</strong>
+          Subscriptions and in‑app purchases are processed by Apple. We receive basic entitlement status (for example, whether Pro is active). We do not receive your payment card details.
+        </li>
+        <li>
+          <strong>Optional: Copilot / planning requests.</strong>
+          If you use Copilot, we process what you type (your prompt) and may also send contextual text you choose to include (for example: Space names and reminder titles) so Copilot can generate suggested reminder actions.
+          Copilot also sends technical context like your timezone and app version so results are scheduled correctly.
+        </li>
+        <li>
+          <strong>Diagnostics & security logs (limited).</strong>
+          Apple may provide crash/performance diagnostics if you opt in at the OS level.
+          For Copilot requests, our backend may log limited technical metadata (for example request timing, app version, and usage metrics) to operate the service, prevent abuse, and debug reliability.
+        </li>
       </ul>
 
-      <h2 id="how-we-use">2) How we use data</h2>
+      <h2 id="how-we-use">2) How we use information</h2>
       <ul>
-        <li>Provide core functionality: schedule reminders, send notifications, and sync across devices via iCloud.</li>
-        <li>Enable collaboration in shared Spaces that you join or create.</li>
-        <li>Validate purchases and restore access to Pro features.</li>
-        <li>Improve stability via crash/performance diagnostics.</li>
+        <li>To provide reminders: schedule local notifications, show upcoming items, and sync across your devices via iCloud.</li>
+        <li>To support shared Spaces: let members collaborate on reminders inside a private shared Space.</li>
+        <li>To provide Copilot (if used): generate suggested reminder actions from your request.</li>
+        <li>To operate and secure the app and Copilot: monitor reliability, prevent abuse, and fix bugs.</li>
+        <li>To validate purchases: unlock Pro features when Apple indicates you’re entitled.</li>
       </ul>
 
-      <h2 id="sharing">3) Sharing</h2>
+      <h2 id="where-data-lives">3) Where your data lives & who can access it</h2>
       <ul>
-        <li>With people you invite. If you choose to share a Space, members can view the reminders within that Space.</li>
-        <li>With Apple services. iCloud, App Store, and TestFlight are required to sync data and manage purchases.</li>
-        <li>No ads, no brokers. We do not sell data or share it with advertising networks.</li>
+        <li>
+          <strong>Reminders & Spaces:</strong> stored in your iCloud/CloudKit.
+          In shared Spaces, members you invite can view (and depending on permissions, edit) items in that Space.
+        </li>
+        <li>
+          <strong>No public database:</strong> the App does not provide a public directory, public profiles, or a public feed of reminders/spaces.
+        </li>
+        <li>
+          <strong>Developer access:</strong> we do not operate our own database for your iCloud reminders/spaces.
+          Your iCloud content is managed under your Apple ID and Apple’s iCloud security controls.
+        </li>
+        <li>
+          <strong>Copilot requests (optional):</strong> Copilot requests are processed by our backend service (hosted on AWS) and sent to an AI provider to generate output.
+          This is separate from iCloud sync.
+        </li>
       </ul>
 
-      <h2 id="storage">4) Storage & security</h2>
+      <h2 id="sharing">4) Sharing & third parties</h2>
       <ul>
-        <li>Reminder data is stored in your iCloud containers and is protected by Apple’s security controls and your Apple ID.</li>
-        <li>We do not have direct access to your iCloud content.</li>
-        <li>On-device data remains on your device unless you back it up with Apple services.</li>
+        <li><strong>With people you invite:</strong> shared Space content is visible to Space members.</li>
+        <li><strong>With Apple:</strong> iCloud/CloudKit is required for sync & collaboration; the App Store is used for purchases.</li>
+        <li><strong>With service providers (Copilot only):</strong> Copilot requests are routed through our hosting and AI providers to generate results.</li>
+        <li><strong>No advertising:</strong> we do not sell your personal information and do not share it with ad networks for targeted advertising.</li>
       </ul>
 
-      <h2 id="retention">5) Retention & deletion</h2>
+      <h2 id="your-choices">5) Your choices</h2>
       <ul>
-        <li>You control retention through iCloud. Deleting a reminder or Space will remove it from your devices and iCloud, subject to Apple’s normal sync and backup behavior.</li>
-        <li>Crash logs provided by Apple may be retained in App Store Connect for a limited time for debugging.</li>
+        <li><strong>Don’t use Copilot:</strong> Copilot is optional. You can use the app as a normal reminders + shared Spaces app without it.</li>
+        <li><strong>Be careful with sensitive data:</strong> avoid entering highly sensitive personal information into reminder titles or Copilot prompts.</li>
+        <li><strong>Manage iCloud:</strong> you can disable iCloud for the App in iOS settings (sync/collaboration will stop).</li>
+        <li><strong>Shared Spaces:</strong> you can leave Spaces, remove members (if you have permissions), or delete content you created.</li>
       </ul>
 
-      <h2 id="choices">6) Your choices</h2>
+      <h2 id="retention">6) Retention</h2>
       <ul>
-        <li>Leave or remove members from a shared Space at any time.</li>
-        <li>Delete reminders/Spaces you created.</li>
-        <li>Disable iCloud for the app in iOS Settings → your Apple ID → iCloud if you prefer local-only use (sync/collaboration will stop).</li>
-        <li>Request support or ask privacy questions at <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a></li>
+        <li><strong>iCloud data:</strong> you control retention by managing reminders/spaces and iCloud settings.</li>
+        <li><strong>Copilot logs:</strong> limited operational logs may be retained for a period needed for reliability and security.</li>
       </ul>
 
-      <h2 id="children">7) Children</h2>
-      <p>The app is rated 4+ and is not directed to children. We do not knowingly collect personal information from children.</p>
+      <h2 id="security">7) Security</h2>
+      <p>
+        We rely on Apple iCloud security plus your device security (Face ID/Touch ID/passcode). For Copilot,
+        we use standard transport encryption (HTTPS) between the app and backend providers.
+      </p>
 
-      <h2 id="changes">8) Changes to this Policy</h2>
-      <p>We reserve the right to update this Privacy Policy at any time. We will notify you of any material changes by updating the "Effective date" at the top of the policy. Your continued use of the App after any such changes become effective constitutes your acceptance of the new policy.</p>
+      <h2 id="children">8) Children</h2>
+      <p>The App isn’t directed to children and we don’t knowingly collect personal information from children.</p>
 
-      <h2 id="contact">9) Contact</h2>
-      <p>For privacy questions or requests, contact: <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a></p>
+      <h2 id="changes">9) Changes to this policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. We’ll update the effective date above and may provide additional notice in the app or App Store listing where appropriate.
+      </p>
 
-      <h2 id="california-rights">10) California Residents’ Rights</h2>
-      <p>If you are a resident of California, you have rights under California law (including the CCPA and CPRA). These include:</p>
-      <ul>
-        <li>The right to know what personal information we collect, use, or share about you.</li>
-        <li>The right to request deletion of your personal information (subject to certain exceptions).</li>
-        <li>The right to opt out of the sale or sharing of your personal information. We do not sell your personal information.</li>
-        <li>The right not to be discriminated against for exercising your privacy rights.</li>
-      </ul>
-      <p>To exercise any of these rights, contact us at <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a>.</p>
+      <h2 id="contact">10) Contact</h2>
+      <p>
+        For privacy questions or requests, email:
+        <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a>
+      </p>
 
-      <h2 id="acceptance">11) Acceptance</h2>
-      <p>By using True Reminder, you agree to the terms of this Privacy Policy. If you do not agree, please discontinue use of the app.</p>
-
-      <h2 id="governing-law">12) Governing law</h2>
-      <p>This Privacy Policy is governed by the laws of the State of California and applicable U.S. federal law, without regard to conflicts of law principles.</p>
-
-      <h2 id="security-responsibilities">13) Security & your responsibilities</h2>
-      <p>We rely on Apple’s iCloud security and your device security (passcode, Face ID/Touch ID). We do not control or store your iCloud password. You are responsible for keeping your Apple ID, device, and backups secure. We are not liable for loss or unauthorized access resulting from issues with your Apple ID, device compromise, or iCloud service disruptions.</p>
+      <h2 id="california">11) California residents’ rights</h2>
+      <p class="muted">
+        If you’re a California resident, you may have rights under the CCPA/CPRA. We do not sell your personal information.
+        To exercise applicable rights, contact us at the email above.
+      </p>
 
       <hr>
       <div class="footer">
         <span class="badge">Build simple. Respect privacy.</span>
-        <a href="index.html">Back to Legal Hub</a>
+        <a href="index.html">Back to Legal</a>
       </div>
     </div>
   </div>
