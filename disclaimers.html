@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="color-scheme" content="light dark">
+    <title>True Reminder — Disclaimers & Limitations</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #f3f4f6;
+            --card: #fff;
+            --text: #111827;
+            --muted: #6b7280;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+            --shadow: rgba(0, 0, 0, .06);
+            --callout: rgba(37, 99, 235, .08)
+        }
+
+        @media (prefers-color-scheme:dark) {
+            :root {
+                --bg: #0b0c10;
+                --card: #161a22;
+                --text: #e5e7eb;
+                --muted: #94a3b8;
+                --accent: #60a5fa;
+                --border: #263041;
+                --shadow: rgba(0, 0, 0, .35);
+                --callout: rgba(96, 165, 250, .14)
+            }
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font: 16px/1.7 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+            color: var(--text);
+            background: var(--bg)
+        }
+
+        .wrap {
+            max-width: 900px;
+            margin: 48px auto;
+            padding: 0 18px
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 26px;
+            box-shadow: 0 1px 14px var(--shadow)
+        }
+
+        .back {
+            position: fixed;
+            top: 14px;
+            left: 14px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 800;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            box-shadow: 0 1px 10px var(--shadow);
+            z-index: 1000
+        }
+
+        h1 {
+            margin: 0 0 6px;
+            font-size: 2rem;
+            letter-spacing: -.02em;
+            line-height: 1.15
+        }
+
+        .meta {
+            margin: 0 0 14px;
+            color: var(--muted)
+        }
+
+        h2 {
+            margin: 22px 0 8px;
+            font-size: 1.28rem;
+            line-height: 1.2
+        }
+
+        p {
+            margin: 10px 0
+        }
+
+        ul {
+            margin: 10px 0 10px 20px;
+            padding: 0
+        }
+
+        li {
+            margin: 6px 0
+        }
+
+        a {
+            color: var(--accent)
+        }
+
+        .callout {
+            background: var(--callout);
+            border: 1px solid rgba(37, 99, 235, .25);
+            border-left: 4px solid var(--accent);
+            padding: 12px 14px;
+            border-radius: 12px;
+            margin: 14px 0
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            color: var(--muted);
+            font-size: .85rem
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+    </style>
+</head>
+
+<body>
+    <a class="back" href="index.html">← Back</a>
+    <div class="wrap">
+        <div class="card">
+            <h1>Disclaimers & Limitations</h1>
+            <p class="meta">Effective date: <strong>January 10, 2026 (Pacific Time)</strong> • Last updated: <strong>January 10, 2026 (Pacific Time)</strong></p>
+
+            <div class="callout">
+                <strong>Not for emergencies.</strong>
+                True Reminder is a productivity tool. <strong>Do not rely on it for emergencies, safety-critical,
+                    medical, legal, or time-critical obligations.</strong>
+                If you need emergency help, call your local emergency number.
+            </div>
+
+            <h2>1) Notifications can fail</h2>
+            <ul>
+                <li>Notifications may be delayed, missed, suppressed, or not delivered due to iOS settings, Focus modes,
+                    Notification Summary, Low Power Mode, background limits, network conditions, device storage, time
+                    changes, or Apple service disruptions.</li>
+                <li>Silent/background pushes are best-effort and may not wake a device, especially if the app is
+                    force-quit or the OS restricts background execution.</li>
+                <li>We do not guarantee delivery times, delivery success, or that reminders will appear at a specific
+                    moment.</li>
+            </ul>
+
+            <h2>2) User responsibility</h2>
+            <ul>
+                <li>You are responsible for verifying schedules, time zones, recurrence rules, and notification
+                    permissions.</li>
+                <li>You are responsible for maintaining backups and alternative systems for important tasks (e.g.,
+                    calendars, alarms, written reminders).</li>
+                <li>For critical obligations (e.g., medication, travel, legal deadlines), use redundant methods and
+                    confirm completion independently.</li>
+            </ul>
+
+            <h2>3) No medical, health, or safety advice</h2>
+            <p>
+                The App does not provide medical, health, legal, or safety advice. Any reminder content is
+                user-generated and may be incomplete or inaccurate.
+            </p>
+
+            <h2>4) Shared Spaces risk</h2>
+            <p>
+                Shared Space content is visible to invited members. Use caution when sharing sensitive information. You
+                control who you invite and what you share.
+            </p>
+
+            <h2>5) Copilot (if used)</h2>
+            <p>
+                Copilot suggestions may be incorrect, incomplete, or poorly timed. Always review suggestions before
+                saving.
+                Do not include highly sensitive personal information in Copilot prompts.
+            </p>
+
+            <h2>6) Warranty disclaimer and liability limit</h2>
+            <p class="muted">
+                See the Terms / EULA for the warranty disclaimer and limitation of liability that apply to your use of
+                the App.
+            </p>
+
+            <hr>
+            <p class="muted"><span class="badge">Build simple. Respect privacy.</span></p>
+        </div>
+    </div>
+</body>
+
+</html>

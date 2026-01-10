@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="color-scheme" content="light dark">
+    <title>True Reminder — Support / Contact / Legal Notice</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #f3f4f6;
+            --card: #fff;
+            --text: #111827;
+            --muted: #6b7280;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+            --shadow: rgba(0, 0, 0, .06);
+            --callout: rgba(37, 99, 235, .08)
+        }
+
+        @media (prefers-color-scheme:dark) {
+            :root {
+                --bg: #0b0c10;
+                --card: #161a22;
+                --text: #e5e7eb;
+                --muted: #94a3b8;
+                --accent: #60a5fa;
+                --border: #263041;
+                --shadow: rgba(0, 0, 0, .35);
+                --callout: rgba(96, 165, 250, .14)
+            }
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font: 16px/1.7 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+            color: var(--text);
+            background: var(--bg)
+        }
+
+        .wrap {
+            max-width: 900px;
+            margin: 48px auto;
+            padding: 0 18px
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 26px;
+            box-shadow: 0 1px 14px var(--shadow)
+        }
+
+        .back {
+            position: fixed;
+            top: 14px;
+            left: 14px;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 800;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            box-shadow: 0 1px 10px var(--shadow);
+            z-index: 1000
+        }
+
+        h1 {
+            margin: 0 0 6px;
+            font-size: 2rem;
+            letter-spacing: -.02em;
+            line-height: 1.15
+        }
+
+        .meta {
+            margin: 0 0 14px;
+            color: var(--muted)
+        }
+
+        h2 {
+            margin: 22px 0 8px;
+            font-size: 1.28rem;
+            line-height: 1.2
+        }
+
+        p {
+            margin: 10px 0
+        }
+
+        ul {
+            margin: 10px 0 10px 20px;
+            padding: 0
+        }
+
+        li {
+            margin: 6px 0
+        }
+
+        a {
+            color: var(--accent)
+        }
+
+        .callout {
+            background: var(--callout);
+            border: 1px solid rgba(37, 99, 235, .25);
+            border-left: 4px solid var(--accent);
+            padding: 12px 14px;
+            border-radius: 12px;
+            margin: 14px 0
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            color: var(--muted);
+            font-size: .85rem
+        }
+
+        .muted {
+            color: var(--muted)
+        }
+    </style>
+</head>
+
+<body>
+    <a class="back" href="index.html">← Back</a>
+    <div class="wrap">
+        <div class="card">
+            <h1>Support / Contact / Legal Notice</h1>
+            <p class="meta">Last updated: <strong>January 10, 2026 (Pacific Time)</strong></p>
+
+            <div class="callout">
+                <strong>Not legal advice.</strong> This page provides support contacts and general legal notices.
+            </div>
+
+            <h2>Support</h2>
+            <p>
+                For help, bug reports, or account/data requests, email:
+                <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a>
+            </p>
+            <p class="muted">
+                Please include: iOS version, app version, device model, and a short description of the issue. Do not
+                include sensitive information in screenshots or logs.
+            </p>
+
+            <h2>Privacy requests</h2>
+            <p>
+                True Reminder stores reminder content in your iCloud/CloudKit. You can delete content in the App and
+                manage iCloud settings in iOS.
+                If you want deletion of backend-stored data we control (such as push device tokens), email us at the
+                address above.
+            </p>
+
+            <h2>Copyright / IP notices</h2>
+            <p>
+                True Reminder and its design are © <strong>[INSERT YEAR]</strong> Mahmoud Khafagy. All rights reserved.
+                Apple, iCloud, CloudKit, and iOS are trademarks of Apple Inc.
+            </p>
+
+            <h2>Takedown requests</h2>
+            <p>
+                If you believe content in a Shared Space infringes your rights, email us with sufficient details to
+                investigate.
+            </p>
+
+            <hr>
+            <p class="muted"><span class="badge">Build simple. Respect privacy.</span></p>
+        </div>
+    </div>
+</body>
+
+</html>

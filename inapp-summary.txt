@@ -1,0 +1,11 @@
+PRIVACY (short):
+True Reminder stores your reminders and shared Spaces in your iCloud/CloudKit.
+We may use Apple Push Notifications (including silent/background pushes) to help your devices stay in sync.
+If you use Copilot, your request text is sent to our backend and to OpenAI (GPT-5 mini) to generate suggestions.
+We don’t sell personal information and we don’t run third-party ads.
+
+KEY TERMS (short):
+Notifications can be delayed, missed, or fail for many reasons. Do not rely on True Reminder for emergencies or safety-critical tasks.
+Copilot suggestions may be wrong—review before saving.
+Subscriptions (including any 7-day trial) are billed by Apple and can be managed in iOS Subscriptions.
+By using the app you agree to the Terms and Privacy Policy.
