@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,298 +7,150 @@
   <meta name="color-scheme" content="light dark">
   <title>True Reminder — Privacy Policy</title>
   <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f3f4f6;
-      --card: #fff;
-      --text: #111827;
-      --muted: #6b7280;
-      --accent: #2563eb;
-      --border: #e5e7eb;
-      --shadow: rgba(0, 0, 0, .06);
-      --callout: rgba(37, 99, 235, .08)
-    }
-
-    @media (prefers-color-scheme:dark) {
-      :root {
-        --bg: #0b0c10;
-        --card: #161a22;
-        --text: #e5e7eb;
-        --muted: #94a3b8;
-        --accent: #60a5fa;
-        --border: #263041;
-        --shadow: rgba(0, 0, 0, .35);
-        --callout: rgba(96, 165, 250, .14)
-      }
-    }
-
-    * {
-      box-sizing: border-box
-    }
-
-    body {
-      margin: 0;
-      font: 16px/1.7 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      color: var(--text);
-      background: var(--bg)
-    }
-
-    .wrap {
-      max-width: 900px;
-      margin: 48px auto;
-      padding: 0 18px
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 26px;
-      box-shadow: 0 1px 14px var(--shadow)
-    }
-
-    .back {
-      position: fixed;
-      top: 14px;
-      left: 14px;
-      padding: 8px 12px;
-      text-decoration: none;
-      color: var(--accent);
-      font-weight: 800;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      box-shadow: 0 1px 10px var(--shadow);
-      z-index: 1000
-    }
-
-    h1 {
-      margin: 0 0 6px;
-      font-size: 2rem;
-      letter-spacing: -.02em;
-      line-height: 1.15
-    }
-
-    .meta {
-      margin: 0 0 14px;
-      color: var(--muted)
-    }
-
-    h2 {
-      margin: 22px 0 8px;
-      font-size: 1.28rem;
-      line-height: 1.2
-    }
-
-    p {
-      margin: 10px 0
-    }
-
-    ul {
-      margin: 10px 0 10px 20px;
-      padding: 0
-    }
-
-    li {
-      margin: 6px 0
-    }
-
-    a {
-      color: var(--accent)
-    }
-
-    hr {
-      border: 0;
-      border-top: 1px solid var(--border);
-      margin: 22px 0
-    }
-
-    .callout {
-      background: var(--callout);
-      border: 1px solid rgba(37, 99, 235, .25);
-      border-left: 4px solid var(--accent);
-      padding: 12px 14px;
-      border-radius: 12px;
-      margin: 14px 0
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 4px 10px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: .85rem
-    }
-
-    .muted {
-      color: var(--muted)
-    }
-
-    code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: .95em
-    }
+    :root{color-scheme:light dark;--bg:#f3f4f6;--card:#fff;--text:#111827;--muted:#6b7280;--accent:#2563eb;--border:#e5e7eb;--shadow:rgba(0,0,0,.06);--callout:rgba(37,99,235,.08)}
+    @media (prefers-color-scheme:dark){:root{--bg:#0b0c10;--card:#161a22;--text:#e5e7eb;--muted:#94a3b8;--accent:#60a5fa;--border:#263041;--shadow:rgba(0,0,0,.35);--callout:rgba(96,165,250,.14)}}
+    *{box-sizing:border-box} body{margin:0;font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--text);background:var(--bg)}
+    .wrap{max-width:900px;margin:48px auto;padding:0 18px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px;box-shadow:0 1px 14px var(--shadow)}
+    .back{position:fixed;top:14px;left:14px;padding:8px 12px;text-decoration:none;color:var(--accent);font-weight:800;background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:0 1px 10px var(--shadow);z-index:1000}
+    h1{margin:0 0 6px;font-size:2rem;letter-spacing:-.02em;line-height:1.15}
+    .meta{margin:0 0 14px;color:var(--muted)}
+    h2{margin:22px 0 8px;font-size:1.28rem;line-height:1.2}
+    p{margin:10px 0}
+    ul{margin:10px 0 10px 20px;padding:0}
+    li{margin:6px 0}
+    a{color:var(--accent)}
+    hr{border:0;border-top:1px solid var(--border);margin:22px 0}
+    .callout{background:var(--callout);border:1px solid rgba(37,99,235,.25);border-left:4px solid var(--accent);padding:12px 14px;border-radius:12px;margin:14px 0}
+    .badge{display:inline-block;padding:4px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:.85rem}
+    .muted{color:var(--muted)}
   </style>
 </head>
-
 <body>
   <a class="back" href="index.html">← Back</a>
   <div class="wrap">
     <div class="card">
       <h1>True Reminder — Privacy Policy</h1>
-      <p class="meta">Effective date: <strong>January 10, 2026 (Pacific Time)</strong> • Last updated: <strong>January 10, 2026 (Pacific Time)</strong></p>
-
-      <div class="callout">
-        <strong>Not legal advice.</strong> This policy describes how the app works and is intended to be transparent. If
-        you have questions, contact us.
-      </div>
+      <p class="meta">Effective date: <strong>January 19, 2026 (Pacific Time)</strong> • Last updated: <strong>January 19, 2026 (Pacific Time)</strong></p>
 
       <p>
-        True Reminder (the “App”) is developed and operated by <strong>Mahmoud Khafagy</strong> (an individual) (“we”,
-        “us”, “our”).
-        This Privacy Policy explains what information the App processes and how it’s used.
+        True Reminder (the “<strong>App</strong>”) is developed and operated by <strong>Mahmoud Khafagy</strong> (an individual) (“<strong>we</strong>,” “<strong>us</strong>,” “<strong>our</strong>”).
+        This Privacy Policy explains what information is processed when you use the App and related services (collectively, the “<strong>Service</strong>”).
       </p>
 
       <div class="callout">
-        <strong>Summary:</strong>
-        Reminders and Shared Spaces sync using <strong>Apple iCloud/CloudKit</strong>.
-        The App can use <strong>Apple Push Notification service (APNs)</strong> (including silent/background pushes) to
-        deliver notifications and help devices refresh.
-        If you use <strong>Copilot</strong>, your request text is sent to our backend and to <strong>OpenAI (GPT-5
-          mini)</strong> to generate suggestions.
-        We don’t sell personal information and we don’t run third-party ads.
+        <strong>Plain-language summary:</strong>
+        Your reminders and Shared Spaces are stored in <strong>Apple iCloud/CloudKit</strong>.
+        The App may register an <strong>APNs device token</strong> with our push service to help deliver pushes (including silent/background pushes).
+        If you use <strong>Copilot</strong>, your request text is sent to our backend and to <strong>OpenAI</strong> to generate suggestions.
+        We do not sell personal information and we do not run third‑party ads.
       </div>
 
       <h2>1) Information we process</h2>
       <ul>
         <li>
-          <strong>iCloud / CloudKit reminder data (core app).</strong>
-          Reminder content (e.g., titles, schedules, recurrence, notes) and Shared Space metadata are stored in your
-          Apple iCloud account using CloudKit.
-          Shared Spaces are visible only to members you invite or who join via an Apple share.
+          <strong>Reminder content and Shared Spaces (stored in Apple iCloud/CloudKit).</strong>
+          This includes reminder titles, schedules, recurrence settings, notes, and Shared Space metadata.
+          Shared Spaces are collaborative: members who have access to a Space can view and edit the Space’s content.
         </li>
         <li>
-          <strong>Push notification data (APNs).</strong>
-          The App receives a device token from Apple (APNs). If you enable push-assisted refresh, the App may send the
-          device token to our backend so we can:
-          (a) register the token, and (b) send notification requests via Apple APNs (including silent pushes).
-          We may store: device token, environment (sandbox/production), app bundle identifier, and optional internal
-          user identifier (if provided).
+          <strong>Sharing links and collaboration.</strong>
+          If you create or join a Shared Space, the share link and membership actions are handled through Apple’s CloudKit sharing mechanisms.
+          Treat share links as sensitive: anyone with the link may be able to access the shared content.
         </li>
         <li>
-          <strong>App settings (on-device).</strong>
-          Preferences such as UI settings and notification configuration are stored locally on your device.
+          <strong>iCloud backup and restore for local reminders (optional).</strong>
+          If you enable “Back up to iCloud,” the App stores a backup for certain local reminders so you can restore after reinstall.
+          Availability depends on your iCloud storage, device storage, and Apple services.
         </li>
         <li>
-          <strong>Purchases.</strong>
-          Subscriptions and in-app purchases are processed by Apple. We receive basic entitlement status (e.g., whether
-          Pro is active). We do not receive your payment card details.
+          <strong>Export/import backup files (optional).</strong>
+          The App can export a backup file (for example, a “.trbackup” file) and import backups. Where the file is stored depends on where you save it (device storage, iCloud Drive, Files, etc.).
+          We do not receive exported files unless you choose to share them with us for support.
         </li>
         <li>
-          <strong>Optional: Copilot.</strong>
-          If you use Copilot, we process the text you submit and may process limited context you choose to include
-          (e.g., reminder titles) to generate suggested actions.
-          Copilot requests are sent to our backend and to <strong>OpenAI (GPT-5 mini)</strong> for processing.
+          <strong>Push notification data (APNs token) and push service records.</strong>
+          Apple provides the App with a device token for push notifications. If push-assisted refresh is enabled, the App may send that token to our push backend so we can register it and request pushes via Apple APNs.
+          The push service may store token metadata such as: token, environment (sandbox/production), bundle identifier, user identifier (CloudKit record name), install identifier, platform, validity status, and timestamps.
         </li>
         <li>
-          <strong>Diagnostics & security logs (limited).</strong>
-          We may process limited technical logs to operate and secure the service (e.g., request timing, error codes,
-          rate limiting, and abuse prevention).
-          We do not intend to log your reminder content for diagnostics.
+          <strong>Copilot input (optional).</strong>
+          If you use Copilot, we process the text you submit (and any context you choose to include) to generate suggestions.
+          Copilot requests are sent to our backend and to OpenAI for processing.
+        </li>
+        <li>
+          <strong>Diagnostics, security, and operational logs.</strong>
+          We and our hosting providers may process limited logs needed to operate and protect the Service (for example: request IDs, error codes, rate limiting, and basic request metadata).
+          Copilot backend logs are designed to avoid storing full prompts by default and may instead log limited metadata (such as request timing and privacy-preserving hashes/lengths) for debugging and abuse prevention.
+        </li>
+        <li>
+          <strong>Purchases and entitlements.</strong>
+          Subscriptions are processed by Apple. We may receive entitlement status (for example, whether Pro features are active). We do not receive your full payment card details.
+        </li>
+        <li>
+          <strong>Support communications.</strong>
+          If you email us or contact us through the App, we process the information you provide (including attachments you choose to send).
         </li>
       </ul>
 
       <h2>2) How we use information</h2>
       <ul>
-        <li>To provide reminders and notifications, including scheduling and sync across your devices via iCloud.</li>
-        <li>To support Shared Spaces collaboration and membership changes.</li>
-        <li>To provide Copilot suggestions (if used).</li>
-        <li>To operate, secure, and debug the App and backend services (including push token registration and push
-          delivery).</li>
+        <li>To provide reminders, scheduling, and notifications.</li>
+        <li>To sync and collaborate through iCloud/CloudKit and Shared Spaces.</li>
+        <li>To register device tokens and request pushes via Apple APNs (including silent/background pushes) to improve cross-device updates.</li>
+        <li>To provide Copilot suggestions if you choose to use Copilot.</li>
+        <li>To operate, secure, debug, and prevent abuse of the Service (including rate limiting).</li>
         <li>To validate purchases and unlock Pro features based on Apple entitlement status.</li>
       </ul>
 
-      <h2>3) Where your data lives & who can access it</h2>
+      <h2>3) Sharing and third parties</h2>
       <ul>
-        <li>
-          <strong>Reminders & Spaces:</strong> stored in your iCloud/CloudKit. Shared Space members can access content
-          in that Space per permissions.
-        </li>
-        <li>
-          <strong>Push token backend:</strong> if enabled, device tokens may be stored on our backend (hosted on
-          <strong>Render</strong>) for push delivery and refresh requests.
-        </li>
-        <li>
-          <strong>No public database:</strong> we do not provide a public directory, public profiles, or a public feed
-          of reminders/spaces.
-        </li>
+        <li><strong>Apple</strong>: iCloud/CloudKit (storage, sync, sharing), APNs (push notifications), App Store (billing).</li>
+        <li><strong>OpenAI</strong>: processes Copilot requests to generate suggestions.</li>
+        <li><strong>Hosting providers</strong>: we use infrastructure providers to run backend services (for example, an AWS-hosted Copilot backend and a Render-hosted push backend), which may process limited operational logs as part of providing hosting and security services.</li>
+        <li><strong>No sale / no ad targeting</strong>: we do not sell personal information and we do not share it for cross-context behavioral advertising.</li>
       </ul>
 
-      <h2>4) Sharing & third parties</h2>
+      <h2>4) Retention</h2>
       <ul>
-        <li><strong>Apple:</strong> iCloud/CloudKit (sync & collaboration), APNs (notifications), App Store (purchases).
-        </li>
-        <li><strong>Hosting:</strong> backend infrastructure may be hosted on <strong>Render</strong> (and its
-          underlying infrastructure providers).</li>
-        <li><strong>Copilot:</strong> Copilot requests are sent to <strong>OpenAI</strong> for processing and response
-          generation.</li>
-        <li><strong>No selling:</strong> we do not sell personal information and do not share it for cross-context
-          behavioral advertising.</li>
+        <li><strong>iCloud/CloudKit content</strong>: you control retention by deleting reminders/spaces in the App and managing iCloud settings.</li>
+        <li><strong>Push token records</strong>: retained while needed for push delivery and reliability (for example, until replaced, invalidated, or deleted upon request).</li>
+        <li><strong>Copilot backend logs</strong>: retained for a limited period for reliability and security (for example, a 7-day CloudWatch retention setting may apply to that backend’s logs).</li>
+        <li><strong>Support communications</strong>: retained as long as needed to respond and maintain records for safety and abuse prevention.</li>
       </ul>
 
-      <h2>5) Legal bases (EEA/UK)</h2>
+      <h2>5) Your choices and controls</h2>
+      <ul>
+        <li><strong>Notifications</strong>: manage permissions in iOS Settings.</li>
+        <li><strong>iCloud</strong>: you can disable iCloud for the App; sync and Shared Spaces will not work if iCloud/CloudKit is unavailable.</li>
+        <li><strong>Copilot</strong>: Copilot is optional; you can avoid using it.</li>
+        <li><strong>Delete content</strong>: delete reminders/spaces inside the App (CloudKit). You can also manage iCloud storage in iOS settings.</li>
+        <li><strong>Request deletion of backend data we control</strong>: email <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a> (for example, to request deletion of a registered push token record).</li>
+      </ul>
+
+      <h2>6) Legal bases (EEA/UK/Switzerland)</h2>
       <p class="muted">
-        If you are in the EEA/UK/Switzerland, we process information to provide the App (contract), to operate and
-        secure services (legitimate interests),
-        and with your consent where required (e.g., certain optional features).
+        Where applicable, we process information to provide the Service (contract), to operate and secure the Service (legitimate interests),
+        and with your consent where required (for example, optional features and permissions).
       </p>
 
-      <h2>6) Retention</h2>
-      <ul>
-        <li><strong>iCloud data:</strong> you control retention by managing reminders/spaces and iCloud settings.</li>
-        <li><strong>Push tokens:</strong> retained while needed for push delivery, then deleted or invalidated when
-          replaced/unregistered, or upon request.</li>
-        <li><strong>Operational logs:</strong> retained only as long as reasonably necessary for reliability, security,
-          and abuse prevention.</li>
-      </ul>
-
-      <h2>7) Your choices</h2>
-      <ul>
-        <li><strong>Notifications:</strong> you can manage notification permissions in iOS Settings.</li>
-        <li><strong>iCloud:</strong> you can disable iCloud for the App; sync and Shared Spaces will stop working.</li>
-        <li><strong>Copilot:</strong> Copilot is optional; you can avoid using it.</li>
-        <li><strong>Delete data:</strong> delete reminders/spaces inside the App (CloudKit). For backend-stored push
-          tokens, contact <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a>.</li>
-      </ul>
+      <h2>7) Security</h2>
+      <p>
+        We use reasonable safeguards such as HTTPS in transit. No method of transmission or storage is 100% secure.
+      </p>
 
       <h2>8) Children</h2>
       <p>
-        The App is not directed to children under 13. If you are a parent/guardian and believe a child has provided
-        personal information to us,
-        contact <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a>.
-      </p>
-      <p class="muted">
-        If Apple’s App Store age rating permits younger users in your region, we still do not intend to collect personal
-        information from children under 13.
+        The Service is not directed to children under 13 and we do not knowingly collect personal information from children under 13.
+        If you are a parent/guardian and believe a child provided personal information to us, contact <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a>.
       </p>
 
-      <h2>9) Security</h2>
-      <p>We use reasonable safeguards, including HTTPS. No method of transmission or storage is 100% secure.</p>
-
-      <h2>10) California privacy notice</h2>
-      <p class="muted">
-        We do not sell personal information and do not share personal information for cross-context behavioral
-        advertising.
-        To request access/deletion of backend-stored data we control (e.g., push tokens), contact us.
-        iCloud/CloudKit content is controlled through your Apple account and the App.
+      <h2>9) Changes</h2>
+      <p>
+        We may update this policy. We’ll update the “Last updated” date and may provide additional notice where appropriate.
       </p>
 
-      <h2>11) Changes</h2>
-      <p>We may update this policy. We’ll update the “Last updated” date and may provide additional notice where
-        appropriate.</p>
-
-      <h2>12) Contact</h2>
+      <h2>10) Contact</h2>
       <p>Privacy questions: <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a></p>
 
       <hr>
@@ -307,5 +158,4 @@
     </div>
   </div>
 </body>
-
 </html>

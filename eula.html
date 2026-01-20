@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,321 +7,193 @@
   <meta name="color-scheme" content="light dark">
   <title>True Reminder — Terms / EULA</title>
   <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f3f4f6;
-      --card: #fff;
-      --text: #111827;
-      --muted: #6b7280;
-      --accent: #2563eb;
-      --border: #e5e7eb;
-      --shadow: rgba(0, 0, 0, .06);
-      --callout: rgba(37, 99, 235, .08)
-    }
-
-    @media (prefers-color-scheme:dark) {
-      :root {
-        --bg: #0b0c10;
-        --card: #161a22;
-        --text: #e5e7eb;
-        --muted: #94a3b8;
-        --accent: #60a5fa;
-        --border: #263041;
-        --shadow: rgba(0, 0, 0, .35);
-        --callout: rgba(96, 165, 250, .14)
-      }
-    }
-
-    * {
-      box-sizing: border-box
-    }
-
-    body {
-      margin: 0;
-      font: 16px/1.7 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      color: var(--text);
-      background: var(--bg)
-    }
-
-    .wrap {
-      max-width: 900px;
-      margin: 48px auto;
-      padding: 0 18px
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 26px;
-      box-shadow: 0 1px 14px var(--shadow)
-    }
-
-    .back {
-      position: fixed;
-      top: 14px;
-      left: 14px;
-      padding: 8px 12px;
-      text-decoration: none;
-      color: var(--accent);
-      font-weight: 800;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      box-shadow: 0 1px 10px var(--shadow);
-      z-index: 1000
-    }
-
-    h1 {
-      margin: 0 0 6px;
-      font-size: 2rem;
-      letter-spacing: -.02em;
-      line-height: 1.15
-    }
-
-    .meta {
-      margin: 0 0 14px;
-      color: var(--muted)
-    }
-
-    h2 {
-      margin: 22px 0 8px;
-      font-size: 1.28rem;
-      line-height: 1.2
-    }
-
-    p {
-      margin: 10px 0
-    }
-
-    ul {
-      margin: 10px 0 10px 20px;
-      padding: 0
-    }
-
-    li {
-      margin: 6px 0
-    }
-
-    a {
-      color: var(--accent)
-    }
-
-    hr {
-      border: 0;
-      border-top: 1px solid var(--border);
-      margin: 22px 0
-    }
-
-    .callout {
-      background: var(--callout);
-      border: 1px solid rgba(37, 99, 235, .25);
-      border-left: 4px solid var(--accent);
-      padding: 12px 14px;
-      border-radius: 12px;
-      margin: 14px 0
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 4px 10px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: .85rem
-    }
-
-    .muted {
-      color: var(--muted)
-    }
-
-    code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: .95em
-    }
+    :root{color-scheme:light dark;--bg:#f3f4f6;--card:#fff;--text:#111827;--muted:#6b7280;--accent:#2563eb;--border:#e5e7eb;--shadow:rgba(0,0,0,.06);--callout:rgba(37,99,235,.08)}
+    @media (prefers-color-scheme:dark){:root{--bg:#0b0c10;--card:#161a22;--text:#e5e7eb;--muted:#94a3b8;--accent:#60a5fa;--border:#263041;--shadow:rgba(0,0,0,.35);--callout:rgba(96,165,250,.14)}}
+    *{box-sizing:border-box} body{margin:0;font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--text);background:var(--bg)}
+    .wrap{max-width:900px;margin:48px auto;padding:0 18px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px;box-shadow:0 1px 14px var(--shadow)}
+    .back{position:fixed;top:14px;left:14px;padding:8px 12px;text-decoration:none;color:var(--accent);font-weight:800;background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:0 1px 10px var(--shadow);z-index:1000}
+    h1{margin:0 0 6px;font-size:2rem;letter-spacing:-.02em;line-height:1.15}
+    .meta{margin:0 0 14px;color:var(--muted)}
+    h2{margin:22px 0 8px;font-size:1.28rem;line-height:1.2}
+    p{margin:10px 0}
+    ul{margin:10px 0 10px 20px;padding:0}
+    li{margin:6px 0}
+    a{color:var(--accent)}
+    hr{border:0;border-top:1px solid var(--border);margin:22px 0}
+    .callout{background:var(--callout);border:1px solid rgba(37,99,235,.25);border-left:4px solid var(--accent);padding:12px 14px;border-radius:12px;margin:14px 0}
+    .badge{display:inline-block;padding:4px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:.85rem}
+    .muted{color:var(--muted)}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.95em}
   </style>
 </head>
-
 <body>
   <a class="back" href="index.html">← Back</a>
   <div class="wrap">
     <div class="card">
       <h1>True Reminder — Terms of Service / EULA</h1>
-      <p class="meta">Effective date: <strong>January 10, 2026 (Pacific Time)</strong> • Last updated: <strong>January 10, 2026 (Pacific Time)</strong></p>
+      <p class="meta">Effective date: <strong>January 19, 2026 (Pacific Time)</strong> • Last updated: <strong>January 19, 2026 (Pacific Time)</strong></p>
 
       <div class="callout">
-        <strong>Not legal advice.</strong> This agreement is provided as a template. Consider having counsel
-        review before shipping.
+        <strong>Safety notice (read this):</strong>
+        True Reminder is a productivity tool. <strong>Notifications and reminders can be delayed, missed, or fail entirely.</strong>
+        <strong>Do not use the App for emergencies or safety‑critical obligations.</strong>
       </div>
 
       <p>
-        This Terms of Service / End-User License Agreement (“Agreement”) is a binding agreement between you
-        (“you” or “User”)
-        and <strong>Mahmoud Khafagy</strong> (an individual) (“Developer,” “we,” “us,” “our”) governing your use
-        of the True Reminder iOS application (the “App”).
-        If you do not agree, do not use the App.
+        This Terms of Service / End‑User License Agreement (“<strong>Terms</strong>”) is a binding agreement between you (“<strong>you</strong>”)
+        and <strong>Mahmoud Khafagy</strong> (an individual) (“<strong>Developer</strong>,” “<strong>we</strong>,” “<strong>us</strong>,” “<strong>our</strong>”)
+        governing your use of the True Reminder iOS application and related services (collectively, the “<strong>Service</strong>”).
+        If you do not agree, do not use the Service.
       </p>
 
+      <h2>1) Apple-required terms (iOS)</h2>
+      <ul>
+        <li><strong>Acknowledgement.</strong> These Terms are between you and the Developer only, not Apple Inc. (“Apple”). Apple is not responsible for the Service or its content.</li>
+        <li><strong>Scope of license.</strong> You are granted a limited, non‑exclusive, non‑transferable license to use the App on Apple‑branded products you own or control, as permitted by Apple’s App Store rules.</li>
+        <li><strong>Maintenance and support.</strong> The Developer is solely responsible for providing any maintenance/support. Apple has no obligation to provide support for the App.</li>
+        <li><strong>Warranty.</strong> Apple has no warranty obligation except as required by applicable law. If the App fails to conform to an applicable warranty, you may notify Apple (and Apple may refund the purchase price, if any, as permitted by Apple’s policies).</li>
+        <li><strong>Product claims.</strong> The Developer (not Apple) is responsible for claims relating to the App, including product liability, consumer protection, regulatory claims, and intellectual property infringement claims.</li>
+        <li><strong>Third‑party beneficiary.</strong> Apple and Apple’s subsidiaries are third‑party beneficiaries of these Terms and may enforce these Terms against you.</li>
+      </ul>
+
+      <h2>2) Eligibility and age</h2>
+      <p>
+        The Service is <strong>not directed to children under 13</strong>. You must be at least <strong>13 years old</strong> to use the Service,
+        and old enough to consent to data processing in your region. If you are between 13 and the age of majority where you live,
+        you represent you have permission from a parent/guardian.
+      </p>
+
+      <h2>3) The Service (what it does)</h2>
+      <ul>
+        <li><strong>Reminders and alarms.</strong> Create, schedule, and manage reminders on your device.</li>
+        <li><strong>iCloud / CloudKit sync and Shared Spaces.</strong> Sync and collaborate using Apple iCloud/CloudKit, including shared spaces of reminders.</li>
+        <li><strong>Optional iCloud backup for local reminders.</strong> You may enable iCloud backup for certain local reminders and restore after reinstall.</li>
+        <li><strong>Optional Copilot.</strong> An AI-assisted feature that can suggest actions (e.g., creating reminders) based on your input.</li>
+      </ul>
+
+      <h2>4) License grant and restrictions</h2>
+      <p>Subject to these Terms, we grant you a revocable, limited license to install and use the App for your personal, non‑commercial use.</p>
+      <ul>
+        <li>You may not reverse engineer, decompile, or attempt to extract source code except to the extent permitted by law.</li>
+        <li>You may not bypass paywalls, entitlement checks, access controls, or rate limits.</li>
+        <li>You may not interfere with the Service, attempt unauthorized access, or introduce malware.</li>
+      </ul>
+
+      <h2>5) Shared Spaces and sharing links (important)</h2>
       <div class="callout">
-        <strong>Critical notice:</strong> The App provides reminders and productivity tools.
-        <strong>Notifications may be delayed, missed, or fail entirely</strong>
-        due to device settings, Focus modes, OS behavior, battery optimizations, network conditions, time
-        changes, or service interruptions.
-        <strong>Do not use the App for emergencies or safety-critical tasks.</strong>
+        <strong>Sharing links are like passwords.</strong> If you share a Space link, <strong>anyone who has the link may be able to access and edit that Space</strong>.
+        Only share links with people you trust. Do not share sensitive information in Spaces.
+      </div>
+      <ul>
+        <li><strong>Responsibility.</strong> You are responsible for who you share with, what you share, and how you use sharing features.</li>
+        <li><strong>Member actions.</strong> Other members may add, edit, disable, or delete shared content depending on permissions. We are not responsible for member behavior or disputes between members.</li>
+        <li><strong>Revocation limits.</strong> Removing access may not instantly undo what someone already saw or saved. Treat collaboration as potentially persistent.</li>
+      </ul>
+
+      <h2>6) Copilot (optional) and no-reliance</h2>
+      <p>
+        If you use Copilot, the text you submit is sent to our backend and to <strong>OpenAI</strong> for processing to generate suggestions.
+        Copilot outputs may be incorrect, incomplete, or inappropriate. <strong>You must review and verify before saving or acting.</strong>
+      </p>
+      <ul>
+        <li><strong>Do not submit sensitive data.</strong> Do not submit highly sensitive personal information (e.g., medical records, financial account numbers, authentication codes).</li>
+        <li><strong>No professional advice.</strong> Copilot is not medical, legal, financial, or safety advice.</li>
+      </ul>
+
+      <h2>7) Subscriptions and payments (Apple In‑App Purchase)</h2>
+      <ul>
+        <li><strong>Apple manages billing.</strong> Purchases and subscriptions are processed by Apple via In‑App Purchase. We do not receive your full payment card details.</li>
+        <li><strong>Auto‑renewal.</strong> Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period (per Apple’s rules).</li>
+        <li><strong>Free trials / introductory offers.</strong> If a free trial or introductory offer is available, the length and terms are shown in Apple’s purchase flow. The subscription converts to a paid subscription unless you cancel before the trial ends.</li>
+        <li><strong>Manage or cancel.</strong> You can manage/cancel in iOS Settings → Apple ID → Subscriptions.</li>
+        <li><strong>Refunds.</strong> Refunds are handled by Apple under Apple’s policies. We cannot grant refunds directly for Apple‑billed purchases.</li>
+        <li><strong>Price changes.</strong> Apple may require your consent for certain price increases; otherwise renewals occur at the then‑current price under Apple’s rules.</li>
+      </ul>
+
+      <h2>8) Notifications are best-effort; your responsibility</h2>
+      <p>
+        You understand the Service is <strong>not a guaranteed delivery system</strong>. Notifications may be delayed, suppressed, or not delivered due to iOS settings,
+        Focus/Do Not Disturb, Low Power Mode, background limits, network conditions, device storage limits, time changes, or Apple service disruptions.
+        You are responsible for maintaining redundant systems for important obligations.
+      </p>
+
+      <h2>9) Your content and feedback</h2>
+      <ul>
+        <li><strong>Your content.</strong> You retain rights to content you create (reminders, notes, space names). You grant us a limited license to process that content only to operate the Service (e.g., sync, collaboration, and requested Copilot processing).</li>
+        <li><strong>Feedback.</strong> If you send feedback or suggestions, you grant us the right to use it without restriction or compensation.</li>
+      </ul>
+
+      <h2>10) Third-party services</h2>
+      <p>
+        The Service relies on third parties (e.g., Apple iCloud/CloudKit, APNs, App Store; OpenAI for Copilot; hosting providers).
+        Third‑party services are governed by their own terms and policies. We are not responsible for third‑party outages, errors, or changes.
+      </p>
+
+      <h2>11) Disclaimer of warranties</h2>
+      <p>
+        TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICE IS PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT WARRANTIES OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON‑INFRINGEMENT.
+      </p>
+
+      <h2>12) Limitation of liability</h2>
+      <p>
+        TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL THE DEVELOPER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+        CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, GOODWILL, OR BUSINESS INTERRUPTION, ARISING OUT OF OR RELATED
+        TO YOUR USE OF (OR INABILITY TO USE) THE SERVICE, INCLUDING MISSED OR DELAYED NOTIFICATIONS, LOST DATA, OR THIRD‑PARTY OUTAGES,
+        EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+      </p>
+      <p>
+        TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER’S TOTAL LIABILITY FOR ALL CLAIMS IN ANY 12‑MONTH PERIOD WILL NOT EXCEED
+        THE AMOUNT YOU PAID TO THE DEVELOPER (THROUGH APPLE) FOR THE SERVICE DURING THAT PERIOD, OR US $10, WHICHEVER IS GREATER.
+      </p>
+
+      <h2>13) Indemnification</h2>
+      <p>
+        You agree to indemnify and hold harmless the Developer from and against claims, damages, losses, and expenses (including reasonable attorneys’ fees)
+        arising out of your content, your misuse of the Service, your violation of these Terms, or your violation of applicable law.
+      </p>
+
+      <h2>14) Suspension and termination</h2>
+      <p>
+        We may suspend or limit access to optional services (e.g., Copilot or push endpoints) if we reasonably believe there is abuse, security risk, or legal compliance need.
+        You may stop using the Service at any time. Sections intended to survive will survive termination (including disclaimers, limitation of liability, and dispute resolution).
+      </p>
+
+      <h2>15) Changes</h2>
+      <p>
+        We may update the Service and these Terms over time. If we make material changes, we will update the “Last updated” date and may provide additional notice in the App.
+        Continued use after changes become effective means you accept the updated Terms.
+      </p>
+
+      <h2>16) Dispute resolution — arbitration and class action waiver (all users)</h2>
+      <div class="callout">
+        <strong>Read carefully.</strong> This section requires most disputes to be resolved by <strong>binding arbitration</strong> on an <strong>individual basis</strong>
+        and includes a <strong>class action waiver</strong>.
       </div>
 
-      <h2>1) Apple required terms (iOS)</h2>
-      <ul>
-        <li><strong>Acknowledgement.</strong> This Agreement is between you and the Developer only, not Apple
-          Inc. (“Apple”). Apple is not responsible for the App or its content.</li>
-        <li><strong>Scope of license.</strong> You are granted a limited, non-exclusive, non-transferable
-          license to use the App on Apple-branded products you own or control, as permitted by Apple’s App
-          Store rules.</li>
-        <li><strong>Maintenance and support.</strong> The Developer is solely responsible for providing any
-          maintenance/support. Apple has no support obligations for the App.</li>
-        <li><strong>Warranty.</strong> Apple has no warranty obligations except as required by applicable law.
-          If the App fails to conform to any applicable warranty, you may notify Apple for a refund (if
-          applicable under Apple’s policies). Apple has no other warranty responsibility.</li>
-        <li><strong>Product claims.</strong> The Developer, not Apple, is responsible for handling claims
-          relating to the App (e.g., liability, regulatory, consumer protection, IP infringement).</li>
-        <li><strong>Third-party beneficiary.</strong> Apple (and Apple’s subsidiaries) are third-party
-          beneficiaries and may enforce this Agreement against you.</li>
-      </ul>
+      <p><strong>Informal resolution first.</strong> Before starting arbitration, you agree to email us at <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a> with a brief description of the dispute and the relief requested. We’ll try to resolve it informally within 30 days.</p>
 
-      <h2>2) Eligibility</h2>
+      <p><strong>Arbitration.</strong> If we cannot resolve the dispute, any claim or dispute arising out of or relating to the Service or these Terms will be resolved by binding arbitration administered by the <strong>American Arbitration Association (AAA)</strong> under its consumer rules, to the extent applicable. The arbitrator has authority to resolve all disputes about interpretation, enforceability, or formation of this section, except as stated below.</p>
+
+      <p><strong>Location and format.</strong> Arbitration will have its seat in <strong>Santa Clara County, California</strong>, but may be conducted by video, phone, or written submissions where appropriate, especially if you reside outside the United States.</p>
+
+      <p><strong>Small claims and injunctive relief exceptions.</strong> Either party may bring an individual claim in small claims court if eligible. Either party may also seek injunctive or equitable relief in court for unauthorized access, security issues, or intellectual property infringement.</p>
+
+      <p><strong>Class action waiver.</strong> You and the Developer agree that claims may be brought only in an individual capacity and not as a plaintiff or class member in any purported class, collective, or representative proceeding. The arbitrator may not consolidate claims or preside over any form of class proceeding.</p>
+
+      <p><strong>Opt‑out.</strong> You may opt out of arbitration by emailing <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a> within 30 days of first accepting these Terms with the subject line <strong>“Arbitration Opt‑Out”</strong> and including: (1) your name, (2) the email you use for App Store / device correspondence (if any), and (3) a clear statement that you are opting out of arbitration. Opting out does not affect any other part of these Terms.</p>
+
+      <p><strong>Local consumer rights.</strong> Some jurisdictions do not allow arbitration or certain waivers for consumers. If you reside in such a jurisdiction, this section applies only to the maximum extent permitted by law and does not limit your non‑waivable rights.</p>
+
+      <h2>17) Governing law and venue</h2>
       <p>
-        You must be at least the minimum age permitted to download and use the App in your region (as determined
-        by Apple’s App Store rating and local law).
-        The App is not directed to children under 13 and we do not knowingly collect personal information from
-        children under 13.
+        These Terms are governed by the laws of the <strong>State of California</strong>, without regard to conflict‑of‑law principles.
+        To the extent a dispute is permitted to be brought in court (for example, if arbitration is not enforceable), you agree it will be brought exclusively in the state or federal courts located in <strong>Santa Clara County, California</strong>, and you consent to personal jurisdiction there.
+        This does not limit any rights you may have under mandatory consumer protection laws where you live.
       </p>
 
-      <h2>3) License grant and restrictions</h2>
-      <p>Subject to this Agreement, we grant you a revocable, limited license to install and use the App for
-        personal, non-commercial use.</p>
-      <ul>
-        <li>You may not reverse engineer, decompile, or attempt to extract source code except where permitted by
-          law.</li>
-        <li>You may not misuse the App to transmit malware, spam, or unlawful content.</li>
-        <li>You may not interfere with or attempt to circumvent security, rate limits, or access controls.</li>
-      </ul>
-
-      <h2>4) Your content and shared Spaces</h2>
-      <ul>
-        <li><strong>Your content.</strong> You retain rights to content you create (reminders, notes, Space
-          names). You grant us a limited license to process that content solely to operate the App (including
-          syncing via iCloud/CloudKit).</li>
-        <li><strong>Shared Spaces.</strong> If you invite others to a Space, you understand they may view/edit
-          content depending on permissions. You are responsible for who you invite and what you share.</li>
-      </ul>
-
-      <h2>5) Copilot (optional)</h2>
-      <p>
-        The App may offer an optional Copilot feature that generates suggestions based on your input.
-        Copilot requests may be sent to our backend and to <strong>OpenAI (GPT-5 mini)</strong> for processing.
-        Copilot output may be incorrect or incomplete. You are responsible for reviewing and confirming changes
-        before saving.
-      </p>
-      <p class="muted"><strong>Do not</strong> submit highly sensitive personal information through Copilot
-        prompts.</p>
-
-      <h2>6) Subscriptions, free trial, and billing (Apple IAP)</h2>
-      <ul>
-        <li><strong>Pro subscription.</strong> Some features may require a paid subscription (“Pro”).</li>
-        <li><strong>7-day free trial.</strong> If offered, the free trial lasts <strong>7 days</strong> unless
-          otherwise stated in the App Store purchase flow. After the trial, the subscription renews
-          automatically unless canceled at least 24 hours before the end of the current period, per Apple’s
-          rules.</li>
-        <li><strong>Billing.</strong> Payment is charged to your Apple ID account upon confirmation. Renewals
-          are charged within 24 hours prior to period end.</li>
-        <li><strong>Manage/cancel.</strong> You can manage or cancel subscriptions in iOS Settings → Apple ID →
-          Subscriptions.</li>
-        <li><strong>Refunds.</strong> Refunds are handled by Apple under Apple’s policies, not by the Developer.
-        </li>
-      </ul>
-      <p class="muted">Placeholder: [INSERT CURRENT PRICING / TIERS if you want to state them here, or omit and
-        rely on App Store display.]</p>
-
-      <h2>7) No guarantee of notifications; assumption of risk</h2>
-      <p>
-        You understand and agree that reminders/notifications may fail. You are solely responsible for
-        maintaining backups or alternative methods for time-critical tasks.
-        The App is not a guaranteed delivery service and is not suitable for emergency or mission-critical use.
-      </p>
-
-      <h2>8) Disclaimers of warranties</h2>
-      <p>
-        THE APP IS PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED,
-        INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY,
-        FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT, TO THE MAXIMUM EXTENT PERMITTED BY LAW.
-      </p>
-
-      <h2>9) Limitation of liability</h2>
-      <p>
-        TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL THE DEVELOPER BE LIABLE FOR ANY INDIRECT,
-        INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES,
-        OR ANY LOSS OF PROFITS, DATA, GOODWILL, OR BUSINESS INTERRUPTION, ARISING OUT OF OR RELATED TO YOUR USE
-        OF (OR INABILITY TO USE) THE APP,
-        INCLUDING MISSED OR DELAYED NOTIFICATIONS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-      </p>
-      <p>
-        TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER’S TOTAL LIABILITY FOR ALL CLAIMS IN ANY 12-MONTH
-        PERIOD WILL NOT EXCEED
-        THE AMOUNT YOU PAID TO THE DEVELOPER (THROUGH APPLE) FOR THE APP OR SUBSCRIPTIONS DURING THAT PERIOD, OR
-        US $10, WHICHEVER IS GREATER.
-      </p>
-
-      <h2>10) Indemnification</h2>
-      <p>
-        You agree to indemnify and hold harmless the Developer from and against claims, damages, losses, and
-        expenses (including reasonable attorneys’ fees)
-        arising out of your content, your misuse of the App, your violation of this Agreement, or your violation
-        of applicable law.
-      </p>
-
-      <h2>11) Termination</h2>
-      <p>
-        We may suspend or terminate access to optional services (e.g., Copilot or backend features) for abuse,
-        security reasons, or legal compliance.
-        You may stop using the App at any time. Sections intended to survive (e.g., disclaimers, limitation of
-        liability) will survive termination.
-      </p>
-
-      <h2>12) Changes to the App or Agreement</h2>
-      <p>
-        We may update the App and this Agreement over time. Continued use after changes become effective
-        constitutes acceptance of the updated Agreement.
-      </p>
-
-      <h2>13) Dispute resolution (choose ONE option)</h2>
-
-      <div class="callout">
-        <strong>Option A — Arbitration + class action waiver (template).</strong><br>
-        [KEEP THIS OPTION IF YOU WANT ARBITRATION]
-        <ul>
-          <li>Any dispute arising out of or relating to the App will be resolved by binding arbitration on an
-            individual basis, except that either party may bring claims in small claims court if eligible.
-          </li>
-          <li>You and the Developer waive any right to participate in a class action or class arbitration.
-          </li>
-          <li>Arbitration rules/administrator: [INSERT “AAA” or other], location: [INSERT], governing law:
-            [INSERT].</li>
-          <li>Opt-out: [INSERT opt-out instructions and timeframe if you want to offer one].</li>
-        </ul>
-      </div>
-
-      <div class="callout">
-        <strong>Option B — Court jurisdiction (template).</strong><br>
-        [KEEP THIS OPTION IF YOU PREFER COURT]
-        <p>
-          Any dispute arising out of or relating to the App will be brought exclusively in the state or
-          federal courts located in <strong>[INSERT COUNTY/STATE]</strong>,
-          and you consent to personal jurisdiction there. Governing law: <strong>[INSERT STATE, e.g.,
-            California]</strong>, without regard to conflict-of-law principles.
-        </p>
-      </div>
-
-      <h2>14) Contact</h2>
+      <h2>18) Contact</h2>
       <p>Support and legal contact: <a href="mailto:truereminderapp@gmail.com">truereminderapp@gmail.com</a></p>
 
       <hr>
@@ -330,5 +201,4 @@
     </div>
   </div>
 </body>
-
 </html>

@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,152 +7,52 @@
   <meta name="color-scheme" content="light dark">
   <title>True Reminder — Legal</title>
   <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f3f4f6;
-      --card: #fff;
-      --text: #111827;
-      --muted: #6b7280;
-      --accent: #2563eb;
-      --border: #e5e7eb;
-      --shadow: rgba(0, 0, 0, .06)
-    }
-
-    @media (prefers-color-scheme:dark) {
-      :root {
-        --bg: #0b0c10;
-        --card: #161a22;
-        --text: #e5e7eb;
-        --muted: #94a3b8;
-        --accent: #60a5fa;
-        --border: #263041;
-        --shadow: rgba(0, 0, 0, .35)
-      }
-    }
-
-    * {
-      box-sizing: border-box
-    }
-
-    body {
-      margin: 0;
-      font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      color: var(--text);
-      background: var(--bg)
-    }
-
-    .wrap {
-      max-width: 900px;
-      margin: 48px auto;
-      padding: 0 18px
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 26px;
-      box-shadow: 0 1px 14px var(--shadow)
-    }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: 2rem;
-      letter-spacing: -.02em;
-      line-height: 1.15
-    }
-
-    p {
-      margin: 0 0 12px;
-      color: var(--muted)
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 4px 10px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: .85rem;
-      margin: 10px 0 0
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 18px 0 0;
-      display: grid;
-      gap: 10px
-    }
-
-    a.link {
-      display: block;
-      padding: 14px 16px;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      text-decoration: none;
-      color: var(--text);
-      transition: transform .05s ease, border-color .2s ease, background-color .2s ease
-    }
-
-    a.link:hover {
-      border-color: var(--accent);
-      background-color: rgba(37, 99, 235, .06)
-    }
-
-    .title {
-      font-weight: 800;
-      margin: 0
-    }
-
-    .desc {
-      margin: 4px 0 0;
-      color: var(--muted);
-      font-size: .92rem;
-      font-weight: 500
-    }
-
-    .footer {
-      margin-top: 18px;
-      color: var(--muted);
-      font-size: .92rem
-    }
-
-    a {
-      color: var(--accent)
-    }
+    :root{color-scheme:light dark;--bg:#f3f4f6;--card:#fff;--text:#111827;--muted:#6b7280;--accent:#2563eb;--border:#e5e7eb;--shadow:rgba(0,0,0,.06)}
+    @media (prefers-color-scheme:dark){:root{--bg:#0b0c10;--card:#161a22;--text:#e5e7eb;--muted:#94a3b8;--accent:#60a5fa;--border:#263041;--shadow:rgba(0,0,0,.35)}}
+    *{box-sizing:border-box} body{margin:0;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--text);background:var(--bg)}
+    .wrap{max-width:900px;margin:48px auto;padding:0 18px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px;box-shadow:0 1px 14px var(--shadow)}
+    h1{margin:0 0 8px;font-size:2rem;letter-spacing:-.02em;line-height:1.15}
+    p{margin:0 0 12px;color:var(--muted)}
+    .badge{display:inline-block;padding:4px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:.85rem;margin:10px 0 0}
+    ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+    a.link{display:block;padding:14px 16px;border:1px solid var(--border);border-radius:12px;text-decoration:none;color:var(--text);transition:transform .05s ease,border-color .2s ease,background-color .2s ease}
+    a.link:hover{border-color:var(--accent);background-color:rgba(37,99,235,.06)}
+    .title{font-weight:800;margin:0}
+    .desc{margin:4px 0 0;color:var(--muted);font-size:.92rem;font-weight:500}
+    .footer{margin-top:18px;color:var(--muted);font-size:.92rem}
+    a{color:var(--accent)}
   </style>
 </head>
-
 <body>
   <div class="wrap">
     <div class="card">
       <h1>True Reminder — Legal</h1>
       <p>Policies and agreements for using the True Reminder iOS app.</p>
-      <div class="badge">Private + shared iCloud reminders • Optional Copilot • Push notifications</div>
+      <p class="footer">Effective date: <strong>January 19, 2026 (Pacific Time)</strong></p>
+      <div class="badge">iCloud/CloudKit reminders • Shared Spaces • Optional Copilot • Push notifications</div>
 
       <ul aria-label="Legal documents">
         <li><a class="link" href="privacy.html">
-            <div class="title">Privacy Policy</div>
-            <div class="desc">What data is processed (iCloud/CloudKit, APNs tokens, Copilot), why, and your choices.
-            </div>
-          </a></li>
+          <div class="title">Privacy Policy</div>
+          <div class="desc">What data is processed (iCloud/CloudKit, APNs tokens, Copilot), why, retention, and choices.</div>
+        </a></li>
         <li><a class="link" href="eula.html">
-            <div class="title">Terms of Service / EULA</div>
-            <div class="desc">License terms, Apple-required provisions, subscriptions, and dispute terms.</div>
-          </a></li>
+          <div class="title">Terms of Service / EULA</div>
+          <div class="desc">License terms, subscriptions, disclaimers, limitation of liability, arbitration/class waiver.</div>
+        </a></li>
         <li><a class="link" href="disclaimers.html">
-            <div class="title">Disclaimers & Limitations</div>
-            <div class="desc">Not for emergencies; notifications can fail; time-critical limitations.</div>
-          </a></li>
+          <div class="title">Disclaimers & Safety Notice</div>
+          <div class="desc">Not for emergencies; notification limits; third‑party outages; Copilot no‑reliance.</div>
+        </a></li>
         <li><a class="link" href="acceptable-use.html">
-            <div class="title">Acceptable Use Policy</div>
-            <div class="desc">Rules for using shared Spaces and Copilot responsibly.</div>
-          </a></li>
+          <div class="title">Acceptable Use Policy</div>
+          <div class="desc">Rules for Shared Spaces, Copilot, and keeping services safe.</div>
+        </a></li>
         <li><a class="link" href="support.html">
-            <div class="title">Support / Contact / Legal Notice</div>
-            <div class="desc">How to contact the developer; IP notices; takedown requests.</div>
-          </a></li>
+          <div class="title">Support Policy / Contact</div>
+          <div class="desc">How to get help, response expectations, refunds guidance, and takedown reports.</div>
+        </a></li>
       </ul>
 
       <div class="footer">
@@ -162,5 +61,4 @@
     </div>
   </div>
 </body>
-
 </html>
